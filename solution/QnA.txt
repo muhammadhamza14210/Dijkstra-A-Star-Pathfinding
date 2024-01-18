@@ -1,0 +1,20 @@
+1a) Points close to the main diagonal indicate that A* and Dijkstra's algorithm produce solutions with similar costs. 
+In these instances, there is a balance between solution quality and computational efficiency, and both algorithms perform comparably. 
+This suggests that the choice between A* and Dijkstra's algorithm may not significantly impact the quality of solutions.
+
+1b) When the number of nodes expanded is smaller, it indicates that A* is generally more efficient compared to Dijkstra's algorithm. 
+In these cases, both algorithms tend to produce solutions that are more or less the same in terms of solution quality. 
+A* demonstrates its superiority by achieving better performance in terms of both running times and t
+he number of nodes expanded compared to Dijkstra's algorithm, especially as the number of nodes expanded increases. 
+This suggests that A* strikes a better balance between exploration and efficiency, making it a favorable choice for 
+pathfinding problems where computational resources are a concern
+
+2) - Weighting Factor (W): 
+It's important to verify whether the choice of W = 2 is suitable for the specific problem domain. 
+Consider running experiments with different W values to assess how it affects solution quality and computational efficiency. 
+This will help determine if W = 2 is an appropriate choice or if another value might yield better results.
+
+- Heuristic Quality Assessment: Evaluate the quality of the heuristic used in WA*. 
+Ensure that the heuristic is admissible, meaning it never overestimates the true cost to the goal. 
+A suboptimal or non-admissible heuristic can lead to inflated solution costs in WA*.
+Double-check the heuristic's implementation and, if necessary, explore alternative heuristics.
